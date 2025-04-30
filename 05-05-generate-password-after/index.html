@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワードジェネレーター</title>
+</head>
+<body>
+    <h1>パスワードジェネレーター</h1>
+    <label for="passwordLength">パスワードの桁数:</label>
+    <input type="number" id="passwordLength" min="1" value="12">
+    <br>
+    <label for="passwordCount">生成する個数:</label>
+    <input type="number" id="passwordCount" min="1" value="1">
+    <br>
+    <button onclick="displayPasswords()">パスワードを生成</button>
+    <ul id="passwordDisplay"></ul>
+    <script src="main.js"></script>
+</body>
+</html>

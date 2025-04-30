@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通貨換算アプリ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>日本円から米ドルへの通貨換算</h1>
+    <form id="currency-form">
+        <label for="yen-input">日本円 (JPY):</label>
+        <input type="text" id="yen-input" placeholder="金額を入力">
+        <button type="button" id="convert-button">変換</button>
+    </form>
+    <p id="result"></p>
+    <p id="error-message" class="error"></p>
+    <script src="main.js"></script>
+</body>
+</html>

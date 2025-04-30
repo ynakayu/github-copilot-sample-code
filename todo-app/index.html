@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #todo-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    #todo-list li {
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+    }
+    #todo-list li input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ToDo App</h1>
+  <input type="text" id="todo-input" placeholder="タスクを入力してください">
+  <button id="add-button">追加</button>
+  <button id="delete-button">削除</button>
+  <button id="complete-button">完了</button>
+  <ul id="todo-list"></ul>
+  <script src="todo-list.js"></script>
+</body>
+</html>
